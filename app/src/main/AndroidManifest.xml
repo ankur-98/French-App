@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SplashActivity"
+            android:name=".Splash_screen.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".main_menu.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -27,6 +27,59 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".General.General"
+            android:label="@string/list1"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".General.Geography.Geography"
+            android:label="@string/genlt1"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".General.Numbers.Numbers"
+            android:label="@string/genlt3"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".General.Calender_Time.Calender_Time"
+            android:label="@string/genlt8"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".General.Subjects_Professions.Subjects_Professions"
+            android:label="@string/genlt9"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".General.Shorthand_Expansions.Shorthand_Expansions"
+            android:label="@string/genlt11"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".Grammer.Grammer"
+            android:label="@string/list2"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".Grammer.Verb.Verb"
+            android:label="@string/gramlt3"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".Grammer.Verb.Regular.Regular"
+            android:label="@string/verblt2"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".Translations.Translations"
+            android:label="Translations"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+        <activity android:name=".lessonActivity"
+            android:theme="@style/AppTheme"
+            />
     </application>
 
 </manifest>

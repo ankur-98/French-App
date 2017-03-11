@@ -1,8 +1,75 @@
 <resources>
-    <string name="app_name">French</string>
+    <string name="app_name">French App</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="list1">General</string>
+    <string name="list2">Grammar</string>
+
+    <string name="genlt1">Geography</string>
+        <string name="geolt1">Francophone Countries</string>
+        <string name="geolt2">General Knowledge</string>
+        <string name="geolt3">Countries and Nationalities</string>
+    <string name="genlt2">Telephone</string>
+    <string name="genlt3">Numbers</string>
+        <string name="numlt1">Ordinal Numbers</string>
+        <string name="numlt2">Cardinal Numbers</string>
+    <string name="genlt4">Salutations</string>
+    <string name="genlt5">Masculine/Feminine</string>
+    <string name="genlt6">Interrogative words</string>
+    <string name="genlt7">Family members</string>
+    <string name="genlt8">Calender and Time</string>
+        <string name="callt1">Seasons</string>
+        <string name="callt2">Days</string>
+        <string name="callt3">Months</string>
+        <string name="callt4">Time</string>
+    <string name="genlt9">Subjects and professions</string>
+        <string name="sublt1">Subjects</string>
+        <string name="sublt2">Professions</string>
+    <string name="genlt10">Directions</string>
+    <string name="genlt11">Short forms and Expansions</string>
+        <string name="shortlt1">Acronyms</string>
+        <string name="shortlt2">Abbreviations</string>
+        <string name="shortlt3">Expansions</string>
+
+    <string name="gramlt1">Pronouns</string>
+    <string name="gramlt2">Definite Articles</string>
+    <string name="gramlt3">Verbs</string>
+        <string name="verblt1">Irregular</string>
+        <string name="verblt2">Regular</string>
+            <string name="reverblt1">Group 1 (-er)</string>
+            <string name="reverblt2">Group 2 (-ir)</string>
+            <string name="reverblt3">Group 3 (-re)</string>
+    <string name="gramlt4">Indefinite Articles</string>
+    <string name="gramlt5">Possessive Adjective</string>
+    <string name="gramlt6">Tonics</string>
+    <string name="gramlt7">Negative Sentences</string>
+    <string name="gramlt8">Preposition of Places</string>
+    <string name="gramlt9">Preposition of Time</string>
+    <string name="gramlt10">Demonstratives</string>
+
+    <string name="tran1">Lesson 1</string>
+    <string name="tran2">Lesson 2</string>
+    <string name="tran3">Lesson 3</string>
+    <string name="tran4">Lesson 4</string>
+    <string name="tran5">Lesson 5</string>
+    <string name="tran6">Lesson 6</string>
+    <string name="tran7">Lesson 7</string>
+    <string name="tran8">Lesson 8</string>
+    <string name="tran9">Lesson 9</string>
+    <string name="tran10">Lesson 10</string>
+    <string name="tran11">Lesson 11</string>
+    <string name="tran12">Lesson 12</string>
+
     <string name="action_settings">Settings</string>
+
+    <string name="para_placeholder">
+        \tLorem ipsum dolor sit amet, dicam putant gloriatur te mei, has an lorem falli. Et nec quot legere conceptam, at sed dolores dignissim. Incorrupte percipitur efficiantur nam ut. Id blandit verterem consetetur vix, duo no atqui exerci, ex cum quando integre euismod. Eos nibh invenire neglegentur ex, eam cu diam conceptam, est id amet iusto.
+        \n\n\tEos ea assum oblique singulis, eam copiosae reprehendunt cu. His ne voluptua inciderint. Qui habeo populo labores ut. Mei ea fugit nullam facilisi, mei in regione dolorem.
+        \n\n\tId usu aeque quodsi, ius in quando assentior. Quis amet appetere usu ut, est ex putant scaevola. His at hinc utroque, cu pri atqui maiorum posidonium. Ut modo facilis noluisse vis. Regione prompta temporibus et sed, eum nulla eirmod ea.
+        \n\n\tPurto argumentum percipitur pri no. In has nulla nihil aperiam, te mel nihil denique moderatius. Mei zril admodum ut, mei periculis instructior no. Facer utamur eleifend ea nec, legere invidunt petentium ne vis. Eu solet debitis nonumes his. Sed te sumo officiis conclusionemque, modo voluptua vim ei.
+        \n\n\tNovum lucilius mel ne, oratio integre mel no. Ne per cibo graeci molestie. Mea te mundi equidem adipisci, ad mel audire copiosae intellegam. Vim quot tota legimus at, officiis assentior reprehendunt nam in. Ne cum fierent recteque voluptatibus.
+    </string>
+
 </resources>
