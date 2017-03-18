@@ -10,10 +10,13 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import app.french.General.Calender_Time.Days.Days;
+import app.french.General.Calender_Time.Months.Months;
+import app.french.General.Calender_Time.Seasons.Seasons;
+import app.french.General.Calender_Time.Time.Time;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
-import app.french.lessonActivity;
 
 
 public class Calender_Time extends AppCompatActivity {
@@ -41,10 +44,10 @@ public class Calender_Time extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.callt1,1));
-        list.add(new indexclass(R.string.callt2,2));
-        list.add(new indexclass(R.string.callt3,3));
-        list.add(new indexclass(R.string.callt4,4));
+        list.add(new indexclass(R.string.callt1,1, Seasons.class));
+        list.add(new indexclass(R.string.callt2,2, Days.class));
+        list.add(new indexclass(R.string.callt3,3, Months.class));
+        list.add(new indexclass(R.string.callt4,4, Time.class));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);
@@ -57,7 +60,7 @@ public class Calender_Time extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 indexclass w = list.get(position);
-                Intent intent = new Intent(getApplicationContext(), lessonActivity.class);
+                Intent intent = new Intent(getApplicationContext(), w.getmCls());
                 intent.putExtra("lname",w.getmLsnName());
                 intent.putExtra("title",title);
                 startActivity(intent);

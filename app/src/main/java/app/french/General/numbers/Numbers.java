@@ -10,10 +10,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import app.french.General.Numbers.Cardinal_Numbers.Cardinal_Numbers;
+import app.french.General.Numbers.Ordinal_Numbers.Ordinal_Numbers;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
-import app.french.lessonActivity;
 
 
 public class Numbers extends AppCompatActivity {
@@ -41,8 +42,8 @@ public class Numbers extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.numlt1,1));
-        list.add(new indexclass(R.string.numlt2,2));
+        list.add(new indexclass(R.string.numlt1,1, Ordinal_Numbers.class));
+        list.add(new indexclass(R.string.numlt2,2, Cardinal_Numbers.class));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);
@@ -55,7 +56,7 @@ public class Numbers extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 indexclass w = list.get(position);
-                Intent intent = new Intent(getApplicationContext(), lessonActivity.class);
+                Intent intent = new Intent(getApplicationContext(), w.getmCls());
                 intent.putExtra("lname",w.getmLsnName());
                 intent.putExtra("title",title);
                 startActivity(intent);

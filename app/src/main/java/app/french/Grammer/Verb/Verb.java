@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import app.french.Grammer.Verb.Irregular.Irregular;
 import app.french.Grammer.Verb.Regular.Regular;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
-import app.french.lessonActivity;
 
 
 public class Verb extends AppCompatActivity {
@@ -42,7 +42,7 @@ public class Verb extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.verblt1,1));
+        list.add(new indexclass(R.string.verblt1,1, Irregular.class));
         list.add(new indexclass(R.string.verblt2,2, Regular.class));
 
         indexAdapter adapter = new indexAdapter(this,list);
@@ -56,16 +56,7 @@ public class Verb extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 indexclass w = list.get(position);
-                Intent intent;
-
-                //open index layout if sub-category available
-                if(w.getmLessonNum()==2){
-                    intent = new Intent(getApplicationContext(), w.getmCls());
-                }
-                //else open lesson
-                else {
-                    intent = new Intent(getApplicationContext(),lessonActivity.class);
-                }
+                Intent intent = new Intent(getApplicationContext(), w.getmCls());
                 intent.putExtra("lname",w.getmLsnName());
                 intent.putExtra("title",title);
                 startActivity(intent);

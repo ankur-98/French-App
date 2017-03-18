@@ -10,10 +10,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import app.french.General.Subjects_Professions.Professions.Professions;
+import app.french.General.Subjects_Professions.Subjects.Subjects;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
-import app.french.lessonActivity;
 
 
 public class Subjects_Professions extends AppCompatActivity {
@@ -41,8 +42,8 @@ public class Subjects_Professions extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.sublt1,1));
-        list.add(new indexclass(R.string.sublt2,2));
+        list.add(new indexclass(R.string.sublt1,1,Subjects.class));
+        list.add(new indexclass(R.string.sublt2,2,Professions.class));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);
@@ -55,7 +56,7 @@ public class Subjects_Professions extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 indexclass w = list.get(position);
-                Intent intent = new Intent(getApplicationContext(), lessonActivity.class);
+                Intent intent = new Intent(getApplicationContext(), w.getmCls());
                 intent.putExtra("lname",w.getmLsnName());
                 intent.putExtra("title",title);
                 startActivity(intent);

@@ -10,10 +10,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import app.french.General.Shorthand_Expansions.Abbreviations.Abbreviations;
+import app.french.General.Shorthand_Expansions.Acronyms.Acronyms;
+import app.french.General.Shorthand_Expansions.Expansions.Expansions;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
-import app.french.lessonActivity;
 
 
 public class Shorthand_Expansions extends AppCompatActivity {
@@ -41,9 +43,9 @@ public class Shorthand_Expansions extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.shortlt1,1));
-        list.add(new indexclass(R.string.shortlt2,2));
-        list.add(new indexclass(R.string.shortlt3,3));
+        list.add(new indexclass(R.string.shortlt1,1,Acronyms.class));
+        list.add(new indexclass(R.string.shortlt2,2,Abbreviations.class));
+        list.add(new indexclass(R.string.shortlt3,3,Expansions.class));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);
@@ -56,7 +58,7 @@ public class Shorthand_Expansions extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 indexclass w = list.get(position);
-                Intent intent = new Intent(getApplicationContext(), lessonActivity.class);
+                Intent intent = new Intent(getApplicationContext(),w.getmCls());
                 intent.putExtra("lname",w.getmLsnName());
                 intent.putExtra("title",title);
                 startActivity(intent);

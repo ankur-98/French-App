@@ -16,6 +16,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import app.french.Assignment.Assignment;
 import app.french.General.General;
 import app.french.Grammer.Grammer;
 import app.french.R;
@@ -114,7 +115,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), Translations.class);
             startActivity(intent);
         } else if (id == R.id.nav_assignments) {
-
+            Intent intent = new Intent(getApplicationContext(), Assignment.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
