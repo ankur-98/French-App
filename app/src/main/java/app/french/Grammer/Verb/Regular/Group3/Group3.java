@@ -32,9 +32,8 @@ public class Group3 extends AppCompatActivity {
 
         WebView wv;
         wv = (WebView) findViewById(R.id.weblesson_content);
-        wv.loadUrl("file:///android_asset/temp1.htm");
+        wv.loadUrl("file:///android_asset/"+ getString(lname) + ".htm");
         wv.getSettings().setBuiltInZoomControls(true);
     }
-
 
 }

@@ -16,9 +16,9 @@
         <string name="numlt1">Ordinal Numbers</string>
         <string name="numlt2">Cardinal Numbers</string>
     <string name="genlt4">Salutations</string>
-    <string name="genlt5">Masculine/Feminine</string>
-    <string name="genlt6">Interrogative words</string>
-    <string name="genlt7">Family members</string>
+    <string name="genlt5">Masculine Feminine</string>
+    <string name="genlt6">Interrogative Words</string>
+    <string name="genlt7">Family Members</string>
     <string name="genlt8">Calender and Time</string>
         <string name="callt1">Seasons</string>
         <string name="callt2">Days</string>
@@ -42,7 +42,7 @@
             <string name="reverblt2">Group 2 (-ir)</string>
             <string name="reverblt3">Group 3 (-re)</string>
     <string name="gramlt4">Indefinite Articles</string>
-    <string name="gramlt5">Possessive Adjective</string>
+    <string name="gramlt5">Possessive Adjectives</string>
     <string name="gramlt6">Tonics</string>
     <string name="gramlt7">Negative Sentences</string>
     <string name="gramlt8">Preposition of Places</string>
@@ -62,7 +62,7 @@
     <string name="tran11">Lesson 11</string>
     <string name="tran12">Lesson 12</string>
 
-    <string name="AssignmentLink">https://1drv.ms/f/s!AtOT0rXw10ckiO9Vyzl7hF9AatmmWA</string>
+    <string name="AssignmentLink">https://1drv.ms/f/s!AtOT0rXw10ckjo5EBKvDkADf7_Mnjg</string>
 
     <string name="action_settings">Settings</string>
 
