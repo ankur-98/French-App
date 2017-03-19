@@ -3,8 +3,8 @@
     package="app.french">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <permission-group android:name="android.permission-group.STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
