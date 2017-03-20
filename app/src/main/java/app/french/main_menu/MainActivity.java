@@ -11,18 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-
-import java.util.ArrayList;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import app.french.Assignment.Assignment;
 import app.french.General.General;
 import app.french.Grammer.Grammer;
 import app.french.R;
 import app.french.Translations.Translations;
-import app.french.common_adapters.wordAdapter;
-import app.french.common_classes.wordclass;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -43,34 +39,46 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        //creating imageview and textview objects on main menu
+        ImageView i1 =(ImageView) findViewById(R.id.imageitem1);
+        TextView t1 = (TextView) findViewById(R.id.item1);
+        ImageView i2 =(ImageView) findViewById(R.id.imageitem2);
+        TextView t2 = (TextView) findViewById(R.id.item2);
 
-
-        //set menu list adapter
-
-        final ArrayList<wordclass> list = new ArrayList<wordclass>();
-
-        list.add(new wordclass(R.string.list1,R.color.list1,General.class));
-        list.add(new wordclass(R.string.list2,R.color.list2,Grammer.class));
-
-        wordAdapter adapter = new wordAdapter(this,list);
-        ListView section = (ListView) findViewById(R.id.menu_list);
-        section.setAdapter(adapter);
-
-
-        //opening new activity for every item on menu list
-
-        section.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        //making textviews and imageviews clickable
+        i1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-
-                wordclass w = list.get(position);
-
-                //starting different activities respective to the item clicked
-
-                Intent intent = new Intent(getApplicationContext(),w.getmCls());
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),General.class);
                 startActivity(intent);
             }
         });
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),General.class);
+                startActivity(intent);
+            }
+        });
+        i2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Grammer.class);
+                startActivity(intent);
+            }
+        });
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Grammer.class);
+                startActivity(intent);
+            }
+        });
+
+//
+//
+
+
     }
 
     @Override
