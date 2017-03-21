@@ -17,7 +17,6 @@ import android.webkit.DownloadListener;
 import android.webkit.URLUtil;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import app.french.R;
@@ -29,11 +28,11 @@ public class Assignment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.weblesson);
+        setContentView(R.layout.noheadingweblesson);
 
-        //setting page heading as Assignment
-        TextView textView_Lno = (TextView) findViewById(R.id.lesson_number);
-        textView_Lno.setText("Assignments");
+//        //setting page heading as Assignment
+//        TextView textView_Lno = (TextView) findViewById(R.id.lesson_number);
+//        textView_Lno.setText("Assignments");
 
         //getting webview layout control in activity
         mWebview  = (WebView) findViewById(R.id.weblesson_content);

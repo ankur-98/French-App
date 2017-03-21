@@ -5,12 +5,11 @@
         android:drawable="@android:color/black"/>
 
     <item
-        android:gravity="center"
+        android:gravity="fill"
         >
         <bitmap
-            android:gravity="center"
-            android:src="@drawable/circlelogo"
-            android:filter="false"
+            android:gravity="fill"
+            android:src="@drawable/splashscreen"
             />
     </item>
 

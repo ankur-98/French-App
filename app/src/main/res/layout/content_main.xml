@@ -13,16 +13,24 @@
     android:layout_height="0dp"
     android:layout_weight="5"
     >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="60dp"
-        android:textStyle="bold|italic"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/app_name"
-        android:textColor="@color/listtext"
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/mainmenuimg"
+        android:scaleType="centerCrop"
         />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="60dp"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="@string/app_name"-->
+        <!--android:textColor="@color/listtext"-->
+        <!--/>-->
 </RelativeLayout>
 
     <!--<ImageView-->
@@ -57,16 +65,16 @@
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:layout_margin="32dp"
-                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:layout_margin="36dp"
+                    android:background="@drawable/filet"
                     android:fadingEdge="horizontal|vertical"
                     android:gravity="center"
                     android:text="@string/list1"
                     android:textAlignment="center"
                     android:textColor="@color/listtext"
                     android:textSize="24sp"
-                    android:fontFamily="monospace"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
             </RelativeLayout>
         </RelativeLayout>
         <RelativeLayout
@@ -83,16 +91,17 @@
                     android:id="@+id/item2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:layout_margin="32dp"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:textColor="@color/listtext"
-                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:layout_margin="36dp"
+                    android:background="@drawable/filet"
+                    android:fadingEdge="horizontal|vertical"
+                    android:gravity="center"
                     android:text="@string/list2"
+                    android:textAlignment="center"
+                    android:textColor="@color/listtext"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
                     />
             </RelativeLayout>
         </RelativeLayout>

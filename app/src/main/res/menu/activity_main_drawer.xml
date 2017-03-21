@@ -12,17 +12,17 @@
             android:title="Assignments" />
     </group>
 
-    <!--<item android:title="Communicate">-->
-        <!--<menu>-->
-            <!--<item-->
-                <!--android:id="@+id/nav_share"-->
-                <!--android:icon="@drawable/ic_menu_share"-->
-                <!--android:title="Share" />-->
-            <!--<item-->
-                <!--android:id="@+id/nav_send"-->
-                <!--android:icon="@drawable/ic_menu_send"-->
-                <!--android:title="Send" />-->
-        <!--</menu>-->
-    <!--</item>-->
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/about_app"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="The App" />
+            <item
+                android:id="@+id/about_dev"
+                android:icon="@drawable/ic_code_black_24dp"
+                android:title="Developers" />
+        </menu>
+    </item>
 
 </menu>

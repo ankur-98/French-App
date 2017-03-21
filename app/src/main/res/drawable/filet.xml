@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="9dp" />
+            <solid android:color="@android:drawable/screen_background_dark_transparent"
+                />
+
+        </shape>
+    </item>
+</selector>
