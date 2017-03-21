@@ -11,7 +11,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import app.french.Assignment.Assignment;
@@ -40,19 +39,19 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         //creating imageview and textview objects on main menu
-        ImageView i1 =(ImageView) findViewById(R.id.imageitem1);
+//        ImageView i1 =(ImageView) findViewById(R.id.imageitem1);
         TextView t1 = (TextView) findViewById(R.id.item1);
-        ImageView i2 =(ImageView) findViewById(R.id.imageitem2);
+//        ImageView i2 =(ImageView) findViewById(R.id.imageitem2);
         TextView t2 = (TextView) findViewById(R.id.item2);
 
         //making textviews and imageviews clickable
-        i1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),General.class);
-                startActivity(intent);
-            }
-        });
+//        i1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(),General.class);
+//                startActivity(intent);
+//            }
+//        });
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,13 +59,13 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
-        i2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),Grammer.class);
-                startActivity(intent);
-            }
-        });
+//        i2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(),Grammer.class);
+//                startActivity(intent);
+//            }
+//        });
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
