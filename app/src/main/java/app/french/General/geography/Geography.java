@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import app.french.General.Geography.Countries_and_Nationalities.Countries_and_Nationalities;
-import app.french.General.Geography.Francophone_Countries.Francophone_Countries;
-import app.french.General.Geography.General_Knowledge.General_Knowledge;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
@@ -43,9 +40,9 @@ public class Geography extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.geolt1,1, Francophone_Countries.class));
-        list.add(new indexclass(R.string.geolt2,2, General_Knowledge.class));
-        list.add(new indexclass(R.string.geolt3,3, Countries_and_Nationalities.class));
+        list.add(new indexclass(R.string.geolt1,1));
+        list.add(new indexclass(R.string.geolt2,2));
+        list.add(new indexclass(R.string.geolt3,3));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

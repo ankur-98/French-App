@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import app.french.General.Subjects_Professions.Professions.Professions;
-import app.french.General.Subjects_Professions.Subjects.Subjects;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
@@ -42,8 +40,8 @@ public class Subjects_Professions extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.sublt1,1,Subjects.class));
-        list.add(new indexclass(R.string.sublt2,2,Professions.class));
+        list.add(new indexclass(R.string.sublt1,1));
+        list.add(new indexclass(R.string.sublt2,2));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

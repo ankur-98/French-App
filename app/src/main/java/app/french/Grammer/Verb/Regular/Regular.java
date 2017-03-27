@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import app.french.Grammer.Verb.Regular.Group1.Group1;
-import app.french.Grammer.Verb.Regular.Group2.Group2;
-import app.french.Grammer.Verb.Regular.Group3.Group3;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
@@ -43,9 +40,9 @@ public class Regular extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.reverblt1,1, Group1.class));
-        list.add(new indexclass(R.string.reverblt2,2, Group2.class));
-        list.add(new indexclass(R.string.reverblt3,3, Group3.class));
+        list.add(new indexclass(R.string.reverblt1,1));
+        list.add(new indexclass(R.string.reverblt2,2));
+        list.add(new indexclass(R.string.reverblt3,3));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

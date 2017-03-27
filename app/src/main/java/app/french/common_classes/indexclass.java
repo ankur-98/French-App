@@ -1,5 +1,7 @@
 package app.french.common_classes;
 
+import app.french.common_adapters.BranchEnd;
+
 public class indexclass {
 
     private int mLsnName;
@@ -11,6 +13,7 @@ public class indexclass {
         mLsnName = LsnName;
         mLessonName = null;
         mLessonNum = lessonNum;
+        mCls = BranchEnd.class;
     }
 
     public indexclass(String lessonName, int lessonNum){

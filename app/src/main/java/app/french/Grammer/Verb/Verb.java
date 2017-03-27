@@ -10,7 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import app.french.Grammer.Verb.Irregular.Irregular;
 import app.french.Grammer.Verb.Regular.Regular;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
@@ -42,7 +41,7 @@ public class Verb extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.verblt1,1, Irregular.class));
+        list.add(new indexclass(R.string.verblt1,1));
         list.add(new indexclass(R.string.verblt2,2, Regular.class));
 
         indexAdapter adapter = new indexAdapter(this,list);

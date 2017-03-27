@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import app.french.General.Shorthand_Expansions.Abbreviations.Abbreviations;
-import app.french.General.Shorthand_Expansions.Acronyms.Acronyms;
-import app.french.General.Shorthand_Expansions.Expansions.Expansions;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
@@ -43,9 +40,9 @@ public class Shorthand_Expansions extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.shortlt1,1,Acronyms.class));
-        list.add(new indexclass(R.string.shortlt2,2,Abbreviations.class));
-        list.add(new indexclass(R.string.shortlt3,3,Expansions.class));
+        list.add(new indexclass(R.string.shortlt1,1));
+        list.add(new indexclass(R.string.shortlt2,2));
+        list.add(new indexclass(R.string.shortlt3,3));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

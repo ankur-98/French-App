@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import app.french.General.Numbers.Cardinal_Numbers.Cardinal_Numbers;
-import app.french.General.Numbers.Ordinal_Numbers.Ordinal_Numbers;
 import app.french.R;
 import app.french.common_adapters.indexAdapter;
 import app.french.common_classes.indexclass;
@@ -42,8 +40,8 @@ public class Numbers extends AppCompatActivity {
 
         final ArrayList<indexclass> list = new ArrayList<indexclass>();
 
-        list.add(new indexclass(R.string.numlt1,1, Ordinal_Numbers.class));
-        list.add(new indexclass(R.string.numlt2,2, Cardinal_Numbers.class));
+        list.add(new indexclass(R.string.numlt1,1));
+        list.add(new indexclass(R.string.numlt2,2));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

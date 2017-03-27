@@ -34,20 +34,24 @@
         <string name="shortlt3">Expansions</string>
 
     <string name="gramlt1">Pronouns</string>
-    <string name="gramlt2">Definite Articles</string>
+    <string name="gramlt2">Articles</string>
+        <string name="artlt1">Indefinite Articles</string>
+        <string name="artlt2">Definite Articles</string>
+        <string name="artlt3">Partitive Articles</string>
+        <string name="artlt4">Demonstrative Articles</string>
     <string name="gramlt3">Verbs</string>
         <string name="verblt1">Irregular</string>
         <string name="verblt2">Regular</string>
             <string name="reverblt1">Group 1 (-er)</string>
             <string name="reverblt2">Group 2 (-ir)</string>
             <string name="reverblt3">Group 3 (-re)</string>
-    <string name="gramlt4">Indefinite Articles</string>
-    <string name="gramlt5">Possessive Adjectives</string>
-    <string name="gramlt6">Tonics</string>
-    <string name="gramlt7">Negative Sentences</string>
-    <string name="gramlt8">Preposition of Places</string>
-    <string name="gramlt9">Preposition of Time</string>
-    <string name="gramlt10">Demonstratives</string>
+    <string name="gramlt4">Possessive Adjectives</string>
+    <string name="gramlt5">Tonics</string>
+    <string name="gramlt6">Negative Sentences</string>
+    <string name="gramlt7">Prepositions</string>
+        <string name="preplt1">Preposition of Places</string>
+        <string name="preplt2">Preposition of Time</string>
+    <string name="gramlt8">Demonstratives</string>
 
     <string name="tran1">Lesson 1</string>
     <string name="tran2">Lesson 2</string>
