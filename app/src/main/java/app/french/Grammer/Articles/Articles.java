@@ -43,7 +43,7 @@ public class Articles extends AppCompatActivity {
         list.add(new indexclass(R.string.artlt1,1));
         list.add(new indexclass(R.string.artlt2,2));
         list.add(new indexclass(R.string.artlt3,3));
-        list.add(new indexclass(R.string.artlt4,4));
+//        list.add(new indexclass(R.string.artlt4,4));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

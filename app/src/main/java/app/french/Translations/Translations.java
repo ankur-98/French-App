@@ -41,12 +41,12 @@ public class Translations extends AppCompatActivity {
         list.add(new indexclass(R.string.tran4,4));
         list.add(new indexclass(R.string.tran5,5));
         list.add(new indexclass(R.string.tran6,6));
-        list.add(new indexclass(R.string.tran7,7));
-        list.add(new indexclass(R.string.tran8,8));
+//        list.add(new indexclass(R.string.tran7,7));
+//        list.add(new indexclass(R.string.tran8,8));
         list.add(new indexclass(R.string.tran9,9));
-        list.add(new indexclass(R.string.tran10,10));
-        list.add(new indexclass(R.string.tran11,11));
-        list.add(new indexclass(R.string.tran12,12));
+//        list.add(new indexclass(R.string.tran10,10));
+//        list.add(new indexclass(R.string.tran11,11));
+//        list.add(new indexclass(R.string.tran12,12));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

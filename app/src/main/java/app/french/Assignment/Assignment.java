@@ -3,6 +3,7 @@ package app.french.Assignment;
 import android.Manifest;
 import android.app.Activity;
 import android.app.DownloadManager;
+import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -41,9 +42,15 @@ public class Assignment extends AppCompatActivity {
 
         final String link = getString(R.string.AssignmentLink);
         final Activity activity = this;
+
         mWebview.setWebViewClient(new WebViewClient() {
             //Operations to be proceeded with in case of an error
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+
+                //close loading dialog if open
+                if (progressBar.isShowing()) {
+                    progressBar.dismiss();
+                }
 
                 //Copy url to clipboard in case of loading error
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
@@ -56,10 +63,21 @@ public class Assignment extends AppCompatActivity {
                 finish();
             }
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if (URLUtil.isNetworkUrl(url))
-                    return false;
-                return true;
+                return !URLUtil.isNetworkUrl(url);
             }
+
+            ProgressDialog progressBar = ProgressDialog.show(activity, "Please Wait", "Loading...");
+
+            @Override
+            public void onPageFinished(WebView view, String url)
+            {
+                // TODO hide your progress image
+                if (progressBar.isShowing()) {
+                    progressBar.dismiss();
+                }
+                super.onPageFinished(view, url);
+            }
+
         });
         //load assignment link
         mWebview.loadUrl(link);
