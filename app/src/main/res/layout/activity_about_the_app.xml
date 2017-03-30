@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.french.AboutTheApp"
+    android:background="#eeeeec">
+
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="4.98"   >
+
+        <ImageView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:src="@drawable/grey"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:weightSum="2">
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/aboutTextView"
+                    android:padding="24dp"
+                    android:textSize="16dp"
+                    android:text="This app is basically designed to help out the students studying French at SRM in there 3rd and 4th semester. The application basically solves the problem of lack of a particular source where the entire syllabus is fit and thus they don't have to search through hundreds of pages to find the information regarding any topic."
+                    />
+    </RelativeLayout>
+
+</LinearLayout>

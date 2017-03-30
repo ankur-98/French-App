@@ -20,14 +20,15 @@
         android:gravity="center"
         android:textColor="@android:color/white"
         android:layout_weight="1.5"
-        android:background="#04132d"
+        android:background="#192230"
         />
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="8.5"
+        android:padding="8dp"
         android:id="@+id/menu_list_section"
-        android:background="#999999"
+        android:background="#EEEEEC"
         />
 
 </LinearLayout>

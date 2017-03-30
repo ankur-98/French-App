@@ -8,12 +8,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import app.french.AboutTheApp;
 import app.french.Assignment.Assignment;
+import app.french.Creators;
 import app.french.General.General;
 import app.french.Grammer.Grammer;
 import app.french.R;
@@ -38,20 +39,9 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //creating imageview and textview objects on main menu
-//        ImageView i1 =(ImageView) findViewById(R.id.imageitem1);
         TextView t1 = (TextView) findViewById(R.id.item1);
-//        ImageView i2 =(ImageView) findViewById(R.id.imageitem2);
         TextView t2 = (TextView) findViewById(R.id.item2);
 
-        //making textviews and imageviews clickable
-//        i1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),General.class);
-//                startActivity(intent);
-//            }
-//        });
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,13 +49,6 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
-//        i2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(),Grammer.class);
-//                startActivity(intent);
-//            }
-//        });
         t2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,27 +73,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -123,6 +85,12 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.nav_assignments) {
             Intent intent = new Intent(getApplicationContext(), Assignment.class);
+            startActivity(intent);
+        } else if (id == R.id.about_app) {
+            Intent intent = new Intent(getApplicationContext(), AboutTheApp.class);
+            startActivity(intent);
+        } else if (id == R.id.about_dev) {
+            Intent intent = new Intent(getApplicationContext(), Creators.class);
             startActivity(intent);
         }
 

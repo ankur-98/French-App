@@ -10,12 +10,13 @@
     <TextView
         android:id="@+id/index_item"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="45dp"
         android:paddingStart="30dp"
+        android:padding="8dp"
         android:gravity="center_vertical"
-        android:textSize="25sp"
-        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textColor="#0f0f10"
         tools:text="lesson"
-        android:background="#b3b3b3"
+        android:background="#EEEEEC"
         />
 </LinearLayout>

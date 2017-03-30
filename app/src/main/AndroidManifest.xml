@@ -32,6 +32,16 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".AboutTheApp"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+
+        <activity android:name=".Creators"
+            android:parentActivityName=".main_menu.MainActivity"
+            android:theme="@style/itemMenu"
+            />
+
         <activity android:name=".common_adapters.BranchEnd"
             android:parentActivityName=".main_menu.MainActivity"
             android:theme="@style/itemMenu"
