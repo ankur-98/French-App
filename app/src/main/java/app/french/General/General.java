@@ -41,13 +41,13 @@ public class General extends AppCompatActivity {
         list.add(new indexclass(R.string.genlt2,2));
         list.add(new indexclass(R.string.genlt3,3,Numbers.class));
         list.add(new indexclass(R.string.genlt4,4));
-        list.add(new indexclass(R.string.genlt5,5));
-        list.add(new indexclass(R.string.genlt6,6));
-        list.add(new indexclass(R.string.genlt7,7));
-        list.add(new indexclass(R.string.genlt8,8,Calender_Time.class));
-        list.add(new indexclass(R.string.genlt9,9,Subjects_Professions.class));
-        list.add(new indexclass(R.string.genlt10,10));
-        list.add(new indexclass(R.string.genlt11,11,Shorthand_Expansions.class));
+//        list.add(new indexclass(R.string.genlt5,5));
+        list.add(new indexclass(R.string.genlt6,5));
+        list.add(new indexclass(R.string.genlt7,6));
+        list.add(new indexclass(R.string.genlt8,7,Calender_Time.class));
+        list.add(new indexclass(R.string.genlt9,8,Subjects_Professions.class));
+        list.add(new indexclass(R.string.genlt10,9));
+        list.add(new indexclass(R.string.genlt11,10,Shorthand_Expansions.class));
 
         indexAdapter adapter = new indexAdapter(this,list);
         ListView section = (ListView) findViewById(R.id.menu_list_section);

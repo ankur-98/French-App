@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="120dp"
                 android:padding="8dp"
-                android:src="@drawable/circlelogo"
+                android:src="@drawable/mtemp"
                 android:id="@+id/creator_one_image" />
 
             <LinearLayout
@@ -67,8 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:id="@+id/creator_one_contact"
-                        android:text="email : ankuronetwo@gmail.com
-linkediIn : LinkedIn/in/ankuragarwal" />
+                        android:text="email : ankuronetwo@gmail.com\nlinkediIn : LinkedIn/in/ankuragarwal" />
             </LinearLayout>
 
         </RelativeLayout>
@@ -83,7 +82,7 @@ linkediIn : LinkedIn/in/ankuragarwal" />
                 android:layout_height="wrap_content"
                 android:layout_width="120dp"
                 android:padding="8dp"
-                android:src="@drawable/circlelogo" 
+                android:src="@drawable/mtemp"
                 android:id="@+id/creator_two_image"/>
 
             <LinearLayout
@@ -113,8 +112,7 @@ linkediIn : LinkedIn/in/ankuragarwal" />
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:id="@+id/creator_two_contact"
-                    android:text="email : adityamagarde26@gmail.com
-linkediIn : LinkedIn/in/adityamagarde" />
+                    android:text="email : adityamagarde26@gmail.com\nlinkediIn : LinkedIn/in/adityamagarde" />
             </LinearLayout>
 
 <!--CREATOR THREE-->            
@@ -129,7 +127,7 @@ linkediIn : LinkedIn/in/adityamagarde" />
                 android:layout_height="wrap_content"
                 android:layout_width="120dp"
                 android:padding="8dp"
-                android:src="@drawable/circlelogo" 
+                android:src="@drawable/ftemp"
                 android:id="@+id/creator_three_image"/>
 
             <LinearLayout
@@ -159,8 +157,7 @@ linkediIn : LinkedIn/in/adityamagarde" />
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:id="@+id/creator_three_contact"
-                    android:text="email : aparna@gmail.com
-linkediIn : LinkedIn/in/aparna" />
+                    android:text="email : aparna@gmail.com\nlinkediIn : LinkedIn/in/aparna" />
             </LinearLayout>
             
         </RelativeLayout>

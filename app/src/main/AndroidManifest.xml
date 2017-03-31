@@ -5,6 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-sdk android:minSdkVersion="19"
+        android:maxSdkVersion="25"
+        />
 
     <application
         android:allowBackup="true"
@@ -14,7 +17,9 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Splash_screen.SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,12 +29,9 @@
         <activity
             android:name=".main_menu.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            >]
         </activity>
 
         <activity android:name=".AboutTheApp"
